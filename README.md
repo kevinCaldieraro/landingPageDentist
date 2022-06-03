@@ -1,4 +1,4 @@
-# 🦷 Landing Pade Consultório Odontológico 🦷
+# 🦷 Landing Page Consultório Odontológico 🦷
 
 ## 📌 Sumário
 <!--ts-->
