@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blue: #6CC2D8;
+    --blue2: #15859B;
+    --blue3: #105E6E;
+    --white: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: var(--white);
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 2px solid #ABABAB;
+}
+
+.hamburguer {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+.lines {
+    background-color: black;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.line-top {
+    transform: translateY(-5px);
+}
+
+.line-bottom {
+    transform: translateY(5px);
+}
+
+.active .line-top {
+    transform: translateY(5px) rotateZ(-45deg);
+}
+
+.active .line-mid {
+    opacity: 0;
+}
+
+.active .line-bottom {
+    transform: translateY(-5px) rotateZ(45deg);
+}
+
+.logo-img {
+    width: 60px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-size: 1.1rem;
+}
+
+.link-menu-item {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid var(--white);
+    transition: all 0.5s ease;
+}
+
+.link-menu-item:hover {
+    opacity: 0.8;
+    border-bottom: 1px solid var(--blue3);
+}
+
+.iconSocialMedia {
+    width: 30px;
+    transition: all 0.5s ease;
+}
+
+.iconSocialMedia:hover {
+    opacity: 0.75;
+}
+
+.iconSocialMedia-footer {
+    width: 35px;
+    transition: all 0.5s ease;
+}
+
+.iconSocialMedia-footer:hover {
+    opacity: 0.75;
+}
+
+.owners-section {
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bg-owners-section {
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    filter: blur(5px);
+}
+
+.bg-img-ownersSection {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div-owners {
+    z-index: 2;
+}
+
+.div-owners {
+    width: 80%;
+    background-color: var(--blue2);
+    background-image: linear-gradient(var(--blue3), var(--blue2));
+    padding: 3px 20px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.div-owners h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--white);
+    text-align: center;
+}
+
+.services-section {
+    background-color: var(--blue3);
+    color: var(--white);
+    padding-top: 20px;
+}
+
+.services-section h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: grid;
+    grid-template: auto auto / auto auto;
+}
+
+.style-services {
+    padding: 60px 90px;
+}
+
+.style-services h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.style-services p {
+    font-size: 1.3rem;
+}
+
+.odontopediatria {
+    background-color: #7F64E2;
+    background-image: linear-gradient(#7F64E2, #a091d4);
+}
+
+.ortodontia {
+    background-color: #E24FEC;
+    background-image: linear-gradient(#E24FEC, #e57dec);
+}
+
+.bichectomia {
+    background-color: #e7d31b;
+    background-image: linear-gradient(#e7d31b, #e9db60);
+}
+
+.clareamento {
+    background-color: #A7C526;
+    background-image: linear-gradient(#A7C526, #b5ca56);
+}
+
+.ourTeam {
+    background-color: var(--blue3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.ourTeam h2 {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dentists {
+    background-color: var(--white);
+    width: 100%;
+    display: grid;
+    grid-template: auto / auto auto;
+    justify-content: center;
+    gap: 100px;
+}
+
+.dentist {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.dentist h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.dentist p {
+    text-align: justify;
+}
+
+.dentist img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.feedback {
+    background-color: var(--blue3);
+    padding-top: 20px;
+}
+
+.feedback h2 {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.patients {
+    background-color: var(--white);
+    display: grid;
+    grid-template: auto auto / 550px 550px;
+    justify-content: center;
+    gap: 50px 50px;
+    padding: 30px 80px;
+}
+
+.patient {
+    background-color: var(--blue3);
+    background-image: linear-gradient(var(--blue3), var(--blue2));
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.patient img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.patient p {
+    color: var(--white);
+}
+
+.location {
+    background-color: var(--blue3);
+    padding-top: 20px;
+}
+
+.location h2 {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.div-location {
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.map {
+    width: 75%;
+    height: 430px;
+}
+
+footer {
+    height: 250px;
+    position: relative;
+    background-color: var(--blue3);
+    color: var(--white);
+}
+
+.grid-footer {
+    display: grid;
+    grid-template: auto / auto auto;
+    align-content: center;
+    height: calc(100% - 40px);
+}
+
+.informations {
+    text-align: center;
+}
+
+.informations h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.informations h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.informations p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-footer {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 1.1rem;
+}
+
+.link-menu-item-footer {
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.2s;
+}
+
+.link-menu-item-footer:hover {
+    opacity: 0.8;
+}
+
+.socialMedias-footer {
+    list-style: none;
+}
+
+.purpose {
+    background-color: var(--blue2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+}
+
+.purpose span {
+    font-size: 0.8rem;
+}
